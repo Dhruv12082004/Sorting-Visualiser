@@ -1,0 +1,106 @@
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #0f172a; /* dark navy */
+    color: #e5e7eb;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin-top: 15px;
+    color: #f9fafb;
+}
+
+/* ---------------- CONTROLS ---------------- */
+.controls {
+    margin: 10px 0;
+}
+
+button {
+    margin: 4px;
+    padding: 7px 14px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    background: #1e293b;
+    color: #e5e7eb;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+button:hover:not(:disabled) {
+    background: #334155;
+    transform: translateY(-1px);
+}
+
+button:disabled {
+    background: #475569;
+    cursor: not-allowed;
+}
+
+/* Algorithm selected */
+.algo-btn.active {
+    background-color: #2563eb;
+}
+
+/* Speed selected */
+.speed-btn.active {
+    background-color: #22c55e;
+    color: #022c22;
+}
+
+/* ---------------- INFO ---------------- */
+#info {
+    margin-top: 10px;
+    font-weight: 600;
+    color: #facc15;
+}
+
+/* ---------------- CONTAINER ---------------- */
+.data-container {
+    position: relative;
+    width: 900px;
+    height: 380px;
+    margin: 20px auto;
+    background: #020617;
+    border-radius: 10px;
+    border: 1px solid #1e293b;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    overflow: hidden;
+}
+
+/* ---------------- BARS ---------------- */
+.bar {
+    position: absolute;
+    bottom: 0;
+    background-color: #38bdf8; /* normal */
+    border-radius: 6px 6px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transition: height 0.2s linear;
+}
+
+/* value on top */
+.bar span {
+    position: absolute;
+    top: -18px;
+    font-size: 12px;
+    color: #e5e7eb;
+    font-weight: 600;
+    user-select: none;
+}
+
+/* Comparison colors */
+.bar.compare {
+    background-color: #ef4444; /* red */
+}
+
+.bar.pivot {
+    background-color: #facc15; /* yellow */
+}
+
+.bar.sorted {
+    background-color: #22c55e; /* green */
+}
