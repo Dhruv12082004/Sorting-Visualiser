@@ -56,14 +56,6 @@ Heights change dynamically to show sorting progress
 
 Sorting completes when bars are in ascending order
 
-▶️ How to Run Locally
-
-Clone the repository
-
-git clone https://github.com/your-username/sorting-visualizer.git
-
-
-Open index.html in your browser
 
 Select an algorithm and start visualizing 🎉
 
