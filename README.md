@@ -38,8 +38,8 @@ JavaScript (ES6) – Logic & visualization
 sorting-visualizer/
 │
 ├── index.html        # Main HTML file
+├── script.js        # Core logic & visualizer
 ├── style.css         # Styling and animations
-├── script.js         # Core logic & visualizer
 └── README.md         # Project documentation
 
 ⚙️ How It Works
